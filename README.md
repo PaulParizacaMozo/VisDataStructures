@@ -30,8 +30,8 @@
 - Hash
 - Sparse Matrix
 - Grafos
-  -Algoritmo de Floyd
-  -Algoritmo de Warshall
-  -Algoritmo de Dijkstra
-  -Algoritmo de Prim
-  -Algoritmo de Kruskal
+  - Algoritmo de Floyd
+  - Algoritmo de Warshall
+  - Algoritmo de Dijkstra
+  - Algoritmo de Prim
+  - Algoritmo de Kruskal
