@@ -1,0 +1,21 @@
+digraph G{
+  //rankdir=LR;
+  node [shape=circle, fontname="" /*style = "bold"*/]
+  {rank=same; "A" "B" "C"}
+  // {rank=same; "D" "E" "F"}
+  // {rank=same; "G" "H" "I"}
+  "A" -> "B" [label=4, style = "bold" color="red"];
+  "A" -> "D" [label=3];
+  "B" -> "D" [label=4];
+  "A" -> "H" [label=15];
+  "D" -> "C" [label=4];
+  "B" -> "C" [label=5];
+  "C" -> "E" [label=6];
+  "C" -> "G" [label=3];
+  "G" -> "F" [label=9];
+  "E" -> "F" [label=8];
+  "D" -> "F" [label=12];
+  "H" -> "I" [label=7];
+  "G" -> "I" [label=13];
+  "F" -> "I" [label=11];
+}

@@ -1,0 +1,24 @@
+digraph G{
+	rankdir="LR"
+	edge[tailclip=false,arrowtail=dot,dir=both];
+	subgraph clust0 {
+		style=filled;
+		color=white;
+		node [style=filled];
+		node[shape=record]
+		nodo_0[label="{<dato> 12| <sig>}" ];
+		nodo_1[label="{<dato> 15| <sig>}" ];
+		nodo_2[label="{<dato> 76| <sig>}" ];
+		nodo_3[label="{<dato> 34| <sig>}" fillcolor="skyblue"];
+		nodo_0:sig:c -> nodo_1:dato;
+		nodo_1:sig:c -> nodo_2:dato;
+		nodo_2:sig:c -> nodo_3:dato;
+
+	}
+	subgraph clust1 {
+		node[shape=record];
+		node[shape="point" height="0"]
+		head [label="head" shape="rect"]
+
+	}
+}

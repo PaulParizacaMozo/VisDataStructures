@@ -1,0 +1,60 @@
+/*digraph G{
+	rankdir = LR
+	node [shape=record, width=0.1, height=0.1]
+	tabla [label = "<0> 0 | <1> 1 | <2> 2 | <3> 3 | <4> 4 | <5> 5 | <6> 6 | <7> 7 | <8> 8 | <9> 9 | <10> 10", height = 5, fillcolor = "#76F6FA" style=filled, fontcolor="#000000"];
+	node[ width=0.8 ];
+	node0_0 [label = "{<e> 0 | 64}" ]
+	node0_1 [label = "{<e> 1 | 44}" ]
+	node0_2 [label = "{<e> 2 | 111}" ]
+	node1_0 [label = "{<e> 0 | 774}" ]
+	node1_1 [label = "{<e> 1 | 11}" ]
+	node1_2 [label = "{<e> 2 | 22}" ]
+	node1_3 [label = "{<e> 3 | 33}" ]
+	node2_0 [label = "{<e> 0 | 4}" ]
+	node5_0 [label = "{<e> 0 | 34}" ]
+	node5_1 [label = "{<e> 1 | 44}" ]
+	node10_0 [label = "{<e> 0 | 54}" ]
+	tabla:0 -> node0_0;
+	node0_0 -> node0_1 
+	node0_1 -> node0_2 
+	tabla:1 -> node1_0;
+	node1_0 -> node1_1 
+	node1_1 -> node1_2 
+	node1_2 -> node1_3 
+	tabla:2 -> node2_0;
+	tabla:5 -> node5_0;
+	node5_0 -> node5_1 
+	tabla:10 -> node10_0;
+
+}*/
+digraph G {
+  fontname="Helvetica,Arial,sans-serif"
+  node [fontname="Helvetica,Arial,sans-serif"]
+  edge [fontname="Helvetica,Arial,sans-serif"]
+  a0 [shape=none label=<
+ <TABLE border="0" cellspacing="10" cellpadding="10" style="rounded" bgcolor="/rdylgn11/1:/rdylgn11/11" gradientangle="315">
+  <TR><TD bgcolor="skyblue">00</TD>
+  <TD bgcolor="skyblue">01</TD>
+  <TD bgcolor="skyblue">02</TD>
+  <TD bgcolor="skyblue">03</TD>
+  </TR>
+  
+  <TR><TD bgcolor="skyblue" gradientangle="270">10</TD>
+  <TD rowspan="2"  bgcolor="skyblue" gradientangle="270">11</TD>
+  <TD bgcolor="skyblue" gradientangle="270">12</TD>
+  <TD bgcolor="skyblue" gradientangle="270">13</TD>
+  </TR>
+  
+  <TR><TD bgcolor="skyblue" gradientangle="270">20</TD>
+  <TD colspan="2"  bgcolor="skyblue1">22</TD>
+  </TR>
+  
+  <TR><TD style="radial" bgcolor="skyblue">30</TD>
+  <TD style="radial" bgcolor="skyblue" gradientangle="45">31</TD>
+  <TD style="radial" bgcolor="skyblue" gradientangle="90" >32</TD>
+  <TD style="radial" bgcolor="skyblue" gradientangle="180">33</TD>
+  </TR>
+  
+</TABLE>>];
+
+}

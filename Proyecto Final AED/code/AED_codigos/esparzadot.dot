@@ -1,0 +1,48 @@
+digraph G{
+	node[shape=octagon style=filled]
+	edge[color= blue]
+	subgraph M_Espar{
+		label = "MATRIZ ESPARZA"
+		raiz[label = "X",group=0, fontcolor=white,fillcolor="brown:blue",gradientangle="300"];
+		edge[dir = "forward"]
+
+		Fila0[label="0",group=0, fontcolor=white,fillcolor="brown:blue",gradientangle="300"];
+		Fila1[label="1",group=0, fontcolor=white,fillcolor="brown:blue",gradientangle="300"];
+		Fila2[label="2",group=0, fontcolor=white,fillcolor="brown:blue",gradientangle="300"];
+		Fila3[label="3",group=0, fontcolor=white,fillcolor="brown:blue",gradientangle="300"];
+		Fila4[label="4",group=0, fontcolor=white,fillcolor="brown:blue",gradientangle="300"];
+
+		Fila0->Fila1;
+		Fila1->Fila2;
+		Fila2->Fila3;
+		Fila3->Fila4;
+		Fila4->Fila5;
+
+		Columna0[fontcolor=white, label="0",group=0,fillcolor="brown:blue",gradientangle="300"];
+		Columna1[fontcolor=white, label="1",group=1,fillcolor="brown:blue",gradientangle="300"];
+		Columna2[fontcolor=white, label="2",group=2,fillcolor="brown:blue",gradientangle="300"];
+		Columna3[fontcolor=white, label="3",group=3,fillcolor="brown:blue",gradientangle="300"];
+		Columna4[fontcolor=white, label="4",group=4,fillcolor="brown:blue",gradientangle="300"];
+
+		Columna0->Columna1;
+		Columna1->Columna2;
+		Columna2->Columna3;
+		Columna3->Columna4;
+		Columna4->Columna5;
+
+		raiz->Fila0
+		raiz->Columna0
+
+		{rank=same;raiz;Columna0;Columna1;Columna2;Columna3;Columna4;Columna5;}
+
+		nodo0_0[label="12",group=0,fillcolor="yellow:dark",fontcolor=white,gradientangle="315"]
+		Fila0->nodo0_0;
+		{rank=same;Fila0;nodo0_0}
+		Columna0->nodo0_0;
+		
+
+		}
+		Fila5[label="NULL" shape=none fillcolor=none];
+		Columna5[label="NULL" shape=none fillcolor=none];
+		//Fila5,Columna5 [shape=none fillcolor=none fontcolor=none]
+}

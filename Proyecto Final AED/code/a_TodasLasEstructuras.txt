@@ -1,0 +1,15 @@
+Pila (Stack) * push pop
+Cola (Queue) * push pop
+Lista Enlazada * pushfront pushback popfront popback find
+Lista Doblemente Enlazada * pushfront pushback popfront popback find
+BSTree (Arbol Binario de Busqueda)
+AVL Tree
+RedBlack Tree
+Tabla de Hash *
+Matriz Esparza
+Binomial Heap
+Algoritmo de Warshall
+Algoritmo de Floyd
+Algoritmo de Kruskall
+Algoritmo de Prim
+Arboles B

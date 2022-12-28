@@ -1,0 +1,74 @@
+digraph G{
+	node[shape=box fillcolor="#FFEDDB" style=filled]
+	subgraph M_Espar{
+		label = "MATRIZ ESPARZA"
+		raiz[label = "0,0"]
+		edge[dir = "forward"]
+
+		Fila0[label="0",group=0];
+		Fila1[label="1",group=0];
+		Fila2[label="2",group=0];
+		Fila3[label="3",group=0];
+		Fila4[label="4",group=0];
+
+		Fila0->Fila1;
+		Fila1->Fila2;
+		Fila2->Fila3;
+		Fila3->Fila4;
+		Fila4->Fila5;
+
+		Columna0[label="0",group=0,fillcolor=yellow];
+		Columna1[label="1",group=1,fillcolor=yellow];
+		Columna2[label="2",group=2,fillcolor=yellow];
+		Columna3[label="3",group=3,fillcolor=yellow];
+		Columna4[label="4",group=4,fillcolor=yellow];
+		Columna5[label="5",group=5,fillcolor=yellow];
+
+		Columna0->Columna1;
+		Columna1->Columna2;
+		Columna2->Columna3;
+		Columna3->Columna4;
+		Columna4->Columna5;
+		Columna5->Columna6;
+
+		raiz->Fila0
+		raiz->Columna0
+
+		{rank=same;raiz;Columna0;Columna1;Columna2;Columna3;Columna4;Columna5;Columna6;}
+
+		nodo1_0[label="75",fillcolor=green,group=0];
+		nodo1_2[label="25",fillcolor=green,group=2];
+		nodo1_3[label="38",fillcolor=green,group=3];
+		nodo1_4[label="33",fillcolor=green,group=4];
+		nodo3_2[label="50",fillcolor=green,group=2];
+		nodo3_3[label="118",fillcolor=green,group=3];
+		nodo3_4[label="11",fillcolor=green,group=4];
+		nodo4_2[label="96",fillcolor=green,group=2];
+
+		Fila1->nodo1_0;
+		nodo1_0->nodo1_2;
+		{rank=same;Fila1;nodo1_0}
+		nodo1_2->nodo1_3;
+		{rank=same;Fila1;nodo1_2}
+		nodo1_3->nodo1_4;
+		{rank=same;Fila1;nodo1_3}
+		{rank=same;Fila1;nodo1_4}
+		Fila3->nodo3_2;
+		nodo3_2->nodo3_3;
+		{rank=same;Fila3;nodo3_2}
+		nodo3_3->nodo3_4;
+		{rank=same;Fila3;nodo3_3}
+		{rank=same;Fila3;nodo3_4}
+		Fila4->nodo4_2;
+		{rank=same;Fila4;nodo4_2}
+		Columna0->nodo1_0;
+		Columna2->nodo1_2;
+		nodo1_2->nodo3_2;
+		nodo3_2->nodo4_2;
+		Columna3->nodo1_3;
+		nodo1_3->nodo3_3;
+		Columna4->nodo1_4;
+		nodo1_4->nodo3_4;
+
+		}
+}

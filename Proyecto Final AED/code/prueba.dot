@@ -1,0 +1,35 @@
+digraph G {
+  node [shape=plaintext]  // for correct display of table
+  {rank=same              // all on same rank
+    null1 [label="null" shape=circle];
+    null2 [label="null" shape=circle];
+    nodo_0 [label=<<table border="0" cellspacing="0" cellborder="1">
+      <tr>
+        <td port="ant" width="28" height="36" fixedsize="true"></td>
+        <td port="data" width="28" height="36" fixedsize="false">11</td>
+        <td port="sig" width="28" height="36" fixedsize="true"></td>
+      </tr> </table>>]
+
+    nodo_1 [label=<<table border="0" cellspacing="0" cellborder="1">
+      <tr>
+        <td port="ant" width="28" height="36" fixedsize="true"></td>
+        <td port="data" width="28" height="36" fixedsize="false">5</td>
+        <td port="sig" width="28" height="36" fixedsize="true"></td>
+      </tr> </table>>]
+
+    nodo_2 [label=<<table border="0" cellspacing="0" cellborder="1">
+    <tr>
+      <td port="ant" width="28" height="36" fixedsize="true"></td>
+      <td port="data" width="28" height="36" fixedsize="false">7</td>
+      <td port="sig" width="28" height="36" fixedsize="true"></td>
+    </tr> </table>>]
+    
+  }
+  nodo_0:sig:c -> nodo_1:data:n [arrowhead=vee, arrowtail=dot, dir=both, tailclip=false];
+  nodo_1:sig:c -> nodo_2:data:n [arrowhead=vee, arrowtail=dot, dir=both, tailclip=false];
+  nodo_2:ant:c -> nodo_1:data:s [arrowhead=vee, arrowtail=dot, dir=both, tailclip=false];
+  nodo_1:ant:c -> nodo_0:data:s [arrowhead=vee, arrowtail=dot, dir=both, tailclip=false];
+
+  null1 -> nodo_0:ant:c [arrowhead=dot, arrowtail=vee, dir=both, headclip=false];
+  nodo_2:sig:c -> null2:w [arrowhead=vee, arrowtail=dot, dir=both, tailclip=false];
+}
