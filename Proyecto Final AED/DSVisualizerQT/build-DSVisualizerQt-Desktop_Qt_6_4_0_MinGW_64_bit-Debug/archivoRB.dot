@@ -1,0 +1,23 @@
+digraph G{
+	node[shape = circle]
+	node[style = filled]
+	99 [fillcolor="#000000", style=filled, fontcolor="#FFFFFF",pad=50.0]
+	50 [fillcolor="#FF1B1B", style=filled, fontcolor="#000000"pad=50.0]
+	25 [fillcolor="#000000", style=filled, fontcolor="#FFFFFF",pad=50.0]
+	36 [fillcolor="#FF1B1B", style=filled, fontcolor="#000000"pad=50.0]
+	78 [fillcolor="#000000", style=filled, fontcolor="#FFFFFF",pad=50.0]
+	200 [fillcolor="#FF1B1B", style=filled, fontcolor="#000000"pad=50.0]
+	100 [fillcolor="#000000", style=filled, fontcolor="#FFFFFF",pad=50.0]
+	300 [fillcolor="#000000", style=filled, fontcolor="#FFFFFF",pad=50.0]
+	500 [fillcolor="#FF1B1B", style=filled, fontcolor="#000000"pad=50.0]
+
+	99 -> 50
+	99 -> 200
+	50 -> 25
+	50 -> 78
+	25 -> 36
+	200 -> 100
+	200 -> 300
+	300 -> 500
+
+}

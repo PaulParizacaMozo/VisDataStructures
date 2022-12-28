@@ -1,0 +1,20 @@
+digraph G{
+	rankdir="LR"
+	edge[tailclip=false,arrowtail=dot,dir=both];
+	subgraph clust0 {
+		style=filled;
+		color=white;
+		node [style=filled];
+		node[shape=record]
+		nodo_0[label="{<dato> 12| <sig>}"];
+		nodo_1[label="{<dato> 13| <sig>}"];
+		nodo_0:sig:c -> nodo_1:dato;
+
+	}
+	subgraph clust1 {
+		node[shape=record];
+		node[shape="point" height="0"]
+		head [label="head" shape="rect"]
+
+	}
+}

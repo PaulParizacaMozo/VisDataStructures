@@ -1,0 +1,14 @@
+digraph G{
+	top [label="top" shape="rect" style=rounded];	subgraph cluster_0 {
+	style=filled;
+	color=white;
+	node [style=filled];
+	node[shape=record]
+	nodo_0[label="<ant> a | <dato> 55"]
+	nodo_1[label="<ant> a | <dato> 44"]
+	nodo_2[label="<ant> a | <dato> 12"]
+	nodo_0:ant -> nodo_1:dato
+	nodo_1:ant -> nodo_2:dato
+
+	}
+}

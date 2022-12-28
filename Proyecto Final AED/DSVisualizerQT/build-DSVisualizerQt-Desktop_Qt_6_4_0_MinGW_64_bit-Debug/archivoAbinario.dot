@@ -1,0 +1,16 @@
+digraph G{
+	node[shape = circle]
+	node[style = filled]
+	node[fillcolor = "#EEEEEE"]
+	node[color = "#31CEFG"]
+	120 -> 36
+	120 -> 155
+	36 -> 15
+	36 -> 48
+	48 -> 41
+	48 -> 111
+	111 -> 60
+	60 -> 55
+	55 -> 56
+
+}

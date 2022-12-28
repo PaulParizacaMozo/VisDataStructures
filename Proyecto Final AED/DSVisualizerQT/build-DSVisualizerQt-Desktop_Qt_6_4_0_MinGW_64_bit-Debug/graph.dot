@@ -1,0 +1,13 @@
+graph world {
+rankdir = LR;
+subgraph cluster_0{label = "GRAFO - MST PRIM";node [style=filled];A -- B[label = 4,color = blue];
+A -- D[label = 3,color = blue];
+B -- D[label = 5];
+B -- C[label = 5];
+C -- E[label = 6,color = blue];
+C -- G[label = 3,color = blue];
+D -- C[label = 4,color = blue];
+D -- F[label = 12];
+E -- F[label = 8,color = blue];
+G -- F[label = 9];
+}}

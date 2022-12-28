@@ -1,0 +1,7 @@
+digraph G{
+	 Mínimo ->5
+	 Mínimo[fillcolor=springgreen,style=filled,shape = octagon,fixedsize = true] edge[color=springgreen]
+	7 -> 54 -> 5
+	{rank=same;7;54;5}
+
+}

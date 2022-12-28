@@ -1,0 +1,9 @@
+digraph G{
+	 Máximo ->66
+	 Máximo[fillcolor=springgreen,style=filled,shape = octagon,fixedsize = true] edge[color=springgreen]
+	66 -> 15
+	{rank=same;66;15}
+	66 -> 7
+	15 -> 8
+
+}

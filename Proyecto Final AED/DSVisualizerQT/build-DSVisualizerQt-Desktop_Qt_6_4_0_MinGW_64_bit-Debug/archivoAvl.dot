@@ -1,0 +1,15 @@
+digraph G{
+	node[shape = circle]
+	node[style = filled]
+	node[fillcolor = "#EEEEEE"]
+	node[color = "#03DEFC"]
+	"20 | 1" -> "10 | 1"
+	"20 | 1" -> "60 | 0"
+	"10 | 1" -> "15 | 0"
+	"60 | 0" -> "40 | 0"
+	"60 | 0" -> "70 | 1"
+	"40 | 0" -> "30 | 0"
+	"40 | 0" -> "50 | 0"
+	"70 | 1" -> "90 | 0"
+
+}
