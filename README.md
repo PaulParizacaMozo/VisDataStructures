@@ -1,4 +1,7 @@
-# Visualizador De Estructuras de Datos V1
+# **Visualizador De Estructuras de Datos V1**
+
+![](https://fips.unsa.edu.pe/cienciadelacomputacion/wp-content/uploads/sites/8/2018/05/Ganadores-en-el-Concurso-de-Baile-2022-4-1170x489.png)
+
 ## 1.- Compilar el archivo code/menu.cpp
 ### >>>  g++ -o ejecutable menu.cpp -Wall -pedantic
 ## 2.- Ejecutar el archivo ejecutable
