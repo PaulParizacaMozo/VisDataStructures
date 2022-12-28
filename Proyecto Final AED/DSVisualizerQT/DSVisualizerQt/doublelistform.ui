@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>doublelistform</class>
+ <widget class="QDialog" name="doublelistform">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1300</width>
+    <height>700</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background: rgb(5,2,13);</string>
+  </property>
+  <widget class="QScrollArea" name="scrollArea">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>1281</width>
+     <height>281</height>
+    </rect>
+   </property>
+   <property name="widgetResizable">
+    <bool>true</bool>
+   </property>
+   <widget class="QWidget" name="scrollAreaWidgetContents">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1279</width>
+      <height>279</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="0" column="0">
+      <widget class="QLabel" name="labelGrafico">
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QWidget" name="widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>240</x>
+     <y>300</y>
+     <width>1051</width>
+     <height>391</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>0</width>
+     <height>0</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background: #9DAABC;</string>
+   </property>
+   <widget class="QPushButton" name="btnPushBack">
+    <property name="geometry">
+     <rect>
+      <x>560</x>
+      <y>70</y>
+      <width>131</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	background-color: rgb(28,19,42);
+    border-style: outset;
+    border-width: 0px;
+    border-radius: 8px;
+    border-color: beige;
+    font: bold 16px;
+	color: rgb(254,215,215);
+    padding: 6px;
+}</string>
+    </property>
+    <property name="text">
+     <string>PushBack</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnPopBack">
+    <property name="geometry">
+     <rect>
+      <x>820</x>
+      <y>160</y>
+      <width>131</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	background-color: rgb(28,19,42);
+    border-style: outset;
+    border-width: 0px;
+    border-radius: 8px;
+    border-color: beige;
+    font: bold 16px;
+	color: rgb(254,215,215);
+    padding: 6px;
+}</string>
+    </property>
+    <property name="text">
+     <string>PopBack</string>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="txtInputDatoPushBack">
+    <property name="geometry">
+     <rect>
+      <x>410</x>
+      <y>70</y>
+      <width>121</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QTextEdit{
+border:2px;
+border-style:solid;
+border-color:rgb(28,19,42);
+border-radius: 8px;
+}
+
+QTextEdit:focus {
+    background-color: #DDD;
+}</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnPushFront">
+    <property name="geometry">
+     <rect>
+      <x>560</x>
+      <y>130</y>
+      <width>131</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	background-color: rgb(28,19,42);
+    border-style: outset;
+    border-width: 0px;
+    border-radius: 8px;
+    border-color: beige;
+    font: bold 16px;
+	color: rgb(254,215,215);
+    padding: 6px;
+}</string>
+    </property>
+    <property name="text">
+     <string>PushFront</string>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="txtInputDatoPushFront">
+    <property name="geometry">
+     <rect>
+      <x>410</x>
+      <y>130</y>
+      <width>121</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QTextEdit{
+border:2px;
+border-style:solid;
+border-color:rgb(28,19,42);
+border-radius: 8px;
+}
+
+QTextEdit:focus {
+    background-color: #DDD;
+}</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnPopFront">
+    <property name="geometry">
+     <rect>
+      <x>820</x>
+      <y>100</y>
+      <width>131</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	background-color: rgb(28,19,42);
+    border-style: outset;
+    border-width: 0px;
+    border-radius: 8px;
+    border-color: beige;
+    font: bold 16px;
+	color: rgb(254,215,215);
+    padding: 6px;
+}</string>
+    </property>
+    <property name="text">
+     <string>PopFront</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnInsert">
+    <property name="geometry">
+     <rect>
+      <x>560</x>
+      <y>240</y>
+      <width>131</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	background-color: rgb(28,19,42);
+    border-style: outset;
+    border-width: 0px;
+    border-radius: 8px;
+    border-color: beige;
+    font: bold 16px;
+	color: rgb(254,215,215);
+    padding: 6px;
+}</string>
+    </property>
+    <property name="text">
+     <string>Insert By Index</string>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="txtInputDatoInsert">
+    <property name="geometry">
+     <rect>
+      <x>460</x>
+      <y>220</y>
+      <width>71</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QTextEdit{
+border:2px;
+border-style:solid;
+border-color:rgb(28,19,42);
+border-radius: 8px;
+}
+
+QTextEdit:focus {
+    background-color: #DDD;
+}</string>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="txtInputDatoIndice">
+    <property name="geometry">
+     <rect>
+      <x>460</x>
+      <y>270</y>
+      <width>71</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QTextEdit{
+border:2px;
+border-style:solid;
+border-color:rgb(28,19,42);
+border-radius: 8px;
+}
+
+QTextEdit:focus {
+    background-color: #DDD;
+}</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelCodeImg">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>60</y>
+      <width>311</width>
+      <height>311</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>10</y>
+      <width>201</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background: transparent;
+font: 14pt &quot;Cooper Black&quot;;
+color: black;</string>
+    </property>
+    <property name="text">
+     <string>Estructura del Nodo</string>
+    </property>
+    <property name="textFormat">
+     <enum>Qt::AutoText</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>410</x>
+      <y>280</y>
+      <width>49</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 11pt;</string>
+    </property>
+    <property name="text">
+     <string>Indice:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>410</x>
+      <y>230</y>
+      <width>49</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 11pt;</string>
+    </property>
+    <property name="text">
+     <string>Dato:</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QWidget" name="widget_2" native="true">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>370</y>
+     <width>200</width>
+     <height>311</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>180</width>
+     <height>0</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>400</width>
+     <height>16777215</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background: transparent;</string>
+   </property>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>80</y>
+      <width>141</width>
+      <height>141</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background: transparent;
+font: 25pt &quot;Cooper Black&quot;;
+color: white;</string>
+    </property>
+    <property name="text">
+     <string>Double
+Linked
+List</string>
+    </property>
+    <property name="textFormat">
+     <enum>Qt::AutoText</enum>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

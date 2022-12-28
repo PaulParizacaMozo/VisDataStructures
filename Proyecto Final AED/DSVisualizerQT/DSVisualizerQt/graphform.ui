@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Graphform</class>
+ <widget class="QDialog" name="Graphform">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1300</width>
+    <height>700</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background: rgb(5,2,13);</string>
+  </property>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>740</x>
+     <y>220</y>
+     <width>111</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: white;</string>
+   </property>
+   <property name="text">
+    <string>Vertice Destino -&gt;</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnPrim">
+   <property name="geometry">
+    <rect>
+     <x>1050</x>
+     <y>370</y>
+     <width>91</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+	background-color: rgb(28,19,42);
+    border-style: outset;
+    border-width: 0px;
+    border-radius: 8px;
+    border-color: beige;
+    font: bold 18px;
+	color: #33FF99;
+    padding: 6px;
+}</string>
+   </property>
+   <property name="text">
+    <string>Prim</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_6">
+   <property name="geometry">
+    <rect>
+     <x>740</x>
+     <y>260</y>
+     <width>111</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: white;</string>
+   </property>
+   <property name="text">
+    <string>Peso de la arista -&gt;</string>
+   </property>
+  </widget>
+  <widget class="QTextEdit" name="inputVO">
+   <property name="geometry">
+    <rect>
+     <x>860</x>
+     <y>180</y>
+     <width>104</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QTextEdit{
+border:2px;
+border-style:solid;
+border-color:rgb(28,19,42);
+border-radius: 8px;
+}
+
+QTextEdit:focus {
+    background-color: #DDD;
+}</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>740</x>
+     <y>180</y>
+     <width>111</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: white;</string>
+   </property>
+   <property name="text">
+    <string>Vertice origen -&gt;</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>1120</x>
+     <y>140</y>
+     <width>91</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: white;</string>
+   </property>
+   <property name="text">
+    <string>Insertar Vertice:</string>
+   </property>
+  </widget>
+  <widget class="QTextEdit" name="inputPeso">
+   <property name="geometry">
+    <rect>
+     <x>860</x>
+     <y>260</y>
+     <width>104</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QTextEdit{
+border:2px;
+border-style:solid;
+border-color:rgb(28,19,42);
+border-radius: 8px;
+}
+
+QTextEdit:focus {
+    background-color: #DDD;
+}</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="InsArista">
+   <property name="geometry">
+    <rect>
+     <x>780</x>
+     <y>310</y>
+     <width>161</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+	background-color: rgb(28,19,42);
+    border-style: outset;
+    border-width: 0px;
+    border-radius: 8px;
+    border-color: beige;
+    font: bold 18px;
+	color: #33FF99;
+    padding: 6px;
+}</string>
+   </property>
+   <property name="text">
+    <string>Insertar Arista</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="InsVertice">
+   <property name="geometry">
+    <rect>
+     <x>1110</x>
+     <y>180</y>
+     <width>81</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+	background-color: rgb(28,19,42);
+    border-style: outset;
+    border-width: 0px;
+    border-radius: 8px;
+    border-color: beige;
+    font: bold 18px;
+	color: #33FF99;
+    padding: 6px;
+}</string>
+   </property>
+   <property name="text">
+    <string>Insertar</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>810</x>
+     <y>130</y>
+     <width>91</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: white;</string>
+   </property>
+   <property name="text">
+    <string>Insertar Arista</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_Draw">
+   <property name="geometry">
+    <rect>
+     <x>1050</x>
+     <y>240</y>
+     <width>191</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+	background-color: rgb(28,19,42);
+    border-style: outset;
+    border-width: 0px;
+    border-radius: 8px;
+    border-color: beige;
+    font: bold 18px;
+	color: #33FF99;
+    padding: 6px;
+}</string>
+   </property>
+   <property name="text">
+    <string>Draw</string>
+   </property>
+  </widget>
+  <widget class="QScrollArea" name="scrollArea">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>631</width>
+     <height>681</height>
+    </rect>
+   </property>
+   <property name="widgetResizable">
+    <bool>true</bool>
+   </property>
+   <widget class="QWidget" name="scrollAreaWidgetContents">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>629</width>
+      <height>679</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="0" column="0">
+      <widget class="QLabel" name="labelGrafico">
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QTextEdit" name="inputVD">
+   <property name="geometry">
+    <rect>
+     <x>860</x>
+     <y>220</y>
+     <width>104</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QTextEdit{
+border:2px;
+border-style:solid;
+border-color:rgb(28,19,42);
+border-radius: 8px;
+}
+
+QTextEdit:focus {
+    background-color: #DDD;
+}</string>
+   </property>
+  </widget>
+  <widget class="QTextEdit" name="inputPrim">
+   <property name="geometry">
+    <rect>
+     <x>1170</x>
+     <y>370</y>
+     <width>71</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QTextEdit{
+border:2px;
+border-style:solid;
+border-color:rgb(28,19,42);
+border-radius: 8px;
+}
+
+QTextEdit:focus {
+    background-color: #DDD;
+}</string>
+   </property>
+  </widget>
+  <widget class="QTextEdit" name="inputVertice">
+   <property name="geometry">
+    <rect>
+     <x>1210</x>
+     <y>180</y>
+     <width>71</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QTextEdit{
+border:2px;
+border-style:solid;
+border-color:rgb(28,19,42);
+border-radius: 8px;
+}
+
+QTextEdit:focus {
+    background-color: #DDD;
+}</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnKruskal">
+   <property name="geometry">
+    <rect>
+     <x>1100</x>
+     <y>310</y>
+     <width>91</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+	background-color: rgb(28,19,42);
+    border-style: outset;
+    border-width: 0px;
+    border-radius: 8px;
+    border-color: beige;
+    font: bold 18px;
+	color: #33FF99;
+    padding: 6px;
+}</string>
+   </property>
+   <property name="text">
+    <string>Kruskal</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>1000</x>
+     <y>180</y>
+     <width>101</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: white;</string>
+   </property>
+   <property name="text">
+    <string>Insertar Vertice:</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="widget_2" native="true">
+   <property name="geometry">
+    <rect>
+     <x>750</x>
+     <y>30</y>
+     <width>481</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background: rgb(5,2,13);</string>
+   </property>
+   <widget class="QLabel" name="label_8">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>10</y>
+      <width>421</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background: transparent;
+font: 25pt &quot;Cooper Black&quot;;
+color: white;</string>
+    </property>
+    <property name="text">
+     <string>GRAFOS NO DIRIGIDOS</string>
+    </property>
+    <property name="textFormat">
+     <enum>Qt::AutoText</enum>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

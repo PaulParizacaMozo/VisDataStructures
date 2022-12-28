@@ -1,0 +1,821 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainForm</class>
+ <widget class="QWidget" name="MainForm">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1300</width>
+    <height>700</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Maximum" vsizetype="Preferred">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>MainForm</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(26, 26, 26)</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="1">
+    <widget class="QWidget" name="widget" native="true">
+     <property name="minimumSize">
+      <size>
+       <width>280</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>280</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background: #9DAABC;</string>
+     </property>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>270</y>
+        <width>181</width>
+        <height>141</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background: transparent;
+font: 25pt &quot;Cooper Black&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Data
+Structures
+Visualizer</string>
+      </property>
+      <property name="textFormat">
+       <enum>Qt::AutoText</enum>
+      </property>
+     </widget>
+    </widget>
+   </item>
+   <item row="0" column="0">
+    <widget class="QWidget" name="widget_2" native="true">
+     <property name="font">
+      <font>
+       <family>Nirmala UI Semilight</family>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background: rgb(5,2,13);</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_2">
+      <item row="0" column="0">
+       <widget class="QPushButton" name="btnStack">
+        <property name="minimumSize">
+         <size>
+          <width>180</width>
+          <height>90</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>160</width>
+          <height>90</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>-1</pointsize>
+          <italic>false</italic>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+	background-color: rgb(28,19,42);
+    border-style: outset;
+    border-width: 0px;
+    border-radius: 10px;
+    border-color: beige;
+    font: bold 18px;
+	color: rgb(254,215,215);
+    padding: 6px;
+}
+
+QPushButton:pressed {
+    background-color: rgb(30,23,46);
+    border-style: inset;
+}
+QPushButton:hover {
+	background-color: #3F325C;
+}</string>
+        </property>
+        <property name="text">
+         <string>Stack</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QPushButton" name="btnQueue">
+        <property name="minimumSize">
+         <size>
+          <width>180</width>
+          <height>90</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>160</width>
+          <height>90</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>-1</pointsize>
+          <italic>false</italic>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+	background-color: rgb(28,19,42);
+    border-style: outset;
+    border-width: 0px;
+    border-radius: 10px;
+    border-color: beige;
+    font: bold 18px;
+	color: #FEFCBF;
+    padding: 6px;
+}
+
+QPushButton:pressed {
+    background-color: rgb(30,23,46);
+    border-style: inset;
+}
+QPushButton:hover {
+	background-color: #3F325C;
+}</string>
+        </property>
+        <property name="text">
+         <string>Queue</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="2">
+       <widget class="QPushButton" name="btnLinkedList">
+        <property name="minimumSize">
+         <size>
+          <width>180</width>
+          <height>90</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>160</width>
+          <height>90</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>-1</pointsize>
+          <italic>false</italic>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+	background-color: rgb(28,19,42);
+    border-style: outset;
+    border-width: 0px;
+    border-radius: 10px;
+    border-color: beige;
+    font: bold 18px;
+	color: #9AE6B0;
+    padding: 6px;
+}
+
+QPushButton:pressed {
+    background-color: rgb(30,23,46);
+    border-style: inset;
+}
+QPushButton:hover {
+	background-color: #3F325C;
+}</string>
+        </property>
+        <property name="text">
+         <string>Linked List</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="3">
+       <widget class="QPushButton" name="btnDoubleLinkedList">
+        <property name="minimumSize">
+         <size>
+          <width>180</width>
+          <height>90</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>160</width>
+          <height>90</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>-1</pointsize>
+          <italic>false</italic>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+	background-color: rgb(28,19,42);
+    border-style: outset;
+    border-width: 0px;
+    border-radius: 10px;
+    border-color: beige;
+    font: bold 18px;
+	color: rgb(254,215,215);
+    padding: 6px;
+}
+
+QPushButton:pressed {
+    background-color: rgb(30,23,46);
+    border-style: inset;
+}
+QPushButton:hover {
+	background-color: #3F325C;
+}</string>
+        </property>
+        <property name="text">
+         <string>Double
+Linked List</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QPushButton" name="btnBST">
+        <property name="minimumSize">
+         <size>
+          <width>180</width>
+          <height>90</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>160</width>
+          <height>90</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>-1</pointsize>
+          <italic>false</italic>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+	background-color: rgb(28,19,42);
+    border-style: outset;
+    border-width: 0;
+    border-radius: 10px;
+    border-color: beige;
+    font: bold 18px;
+	color: #81E6D9;
+    padding: 6px;
+}
+
+QPushButton:pressed {
+    background-color: rgb(30,23,46);
+    border-style: inset;
+}
+QPushButton:hover {
+	background-color: #3F325C;
+}</string>
+        </property>
+        <property name="text">
+         <string>Binary Serch
+Tree</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QPushButton" name="btnAVLTree">
+        <property name="minimumSize">
+         <size>
+          <width>180</width>
+          <height>90</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>160</width>
+          <height>90</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>-1</pointsize>
+          <italic>false</italic>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+	background-color: rgb(28,19,42);
+    border-style: outset;
+    border-width: 0;
+    border-radius: 10px;
+    border-color: beige;
+    font: bold 18px;
+	color: #90CDF4;
+    padding: 6px;
+}
+
+QPushButton:pressed {
+    background-color: rgb(30,23,46);
+    border-style: inset;
+}
+QPushButton:hover {
+	background-color: #3F325C;
+}</string>
+        </property>
+        <property name="text">
+         <string>AVL Tree</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="2">
+       <widget class="QPushButton" name="btnRedBlackTree">
+        <property name="minimumSize">
+         <size>
+          <width>180</width>
+          <height>90</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>160</width>
+          <height>90</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>-1</pointsize>
+          <italic>false</italic>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+	background-color: rgb(28,19,42);
+    border-style: outset;
+    border-width: 0;
+    border-radius: 10px;
+    border-color: beige;
+    font: bold 18px;
+	color: #FEB2B2;
+    padding: 6px;
+}
+
+QPushButton:pressed {
+    background-color: rgb(30,23,46);
+    border-style: inset;
+}
+QPushButton:hover {
+	background-color: #3F325C;
+}</string>
+        </property>
+        <property name="text">
+         <string>RedBlack Tree</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="3">
+       <widget class="QPushButton" name="btnHashTable">
+        <property name="minimumSize">
+         <size>
+          <width>180</width>
+          <height>90</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>160</width>
+          <height>90</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>-1</pointsize>
+          <italic>false</italic>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+	background-color: rgb(28,19,42);
+    border-style: outset;
+    border-width: 0;
+    border-radius: 10px;
+    border-color: beige;
+    font: bold 18px;
+	color: #A0F97A;
+    padding: 6px;
+}
+
+QPushButton:pressed {
+    background-color: rgb(30,23,46);
+    border-style: inset;
+}
+QPushButton:hover {
+	background-color: #3F325C;
+}</string>
+        </property>
+        <property name="text">
+         <string>Hash Table</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QPushButton" name="btnSparseMatrix">
+        <property name="minimumSize">
+         <size>
+          <width>180</width>
+          <height>90</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>160</width>
+          <height>90</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>-1</pointsize>
+          <italic>false</italic>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+	background-color: rgb(28,19,42);
+    border-style: outset;
+    border-width: 0;
+    border-radius: 10px;
+    border-color: beige;
+    font: bold 18px;
+	color: #E2E8F0;
+    padding: 6px;
+}
+
+QPushButton:pressed {
+    background-color: rgb(30,23,46);
+    border-style: inset;
+}
+QPushButton:hover {
+	background-color: #3F325C;
+}</string>
+        </property>
+        <property name="text">
+         <string>Sparse Matrix</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QPushButton" name="btnBinoHeap">
+        <property name="minimumSize">
+         <size>
+          <width>180</width>
+          <height>90</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>160</width>
+          <height>90</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>-1</pointsize>
+          <italic>false</italic>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+	background-color: rgb(28,19,42);
+    border-style: outset;
+    border-width: 0;
+    border-radius: 10px;
+    border-color: beige;
+    font: bold 18px;
+	color: #81E6D9;
+    padding: 6px;
+}
+
+QPushButton:pressed {
+    background-color: rgb(30,23,46);
+    border-style: inset;
+}
+QPushButton:hover {
+	background-color: #3F325C;
+}</string>
+        </property>
+        <property name="text">
+         <string>Binomial Heap</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="2">
+       <widget class="QPushButton" name="btnFiboHeap">
+        <property name="minimumSize">
+         <size>
+          <width>180</width>
+          <height>90</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>160</width>
+          <height>90</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>-1</pointsize>
+          <italic>false</italic>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+	background-color: rgb(28,19,42);
+    border-style: outset;
+    border-width: 0;
+    border-radius: 10px;
+    border-color: beige;
+    font: bold 18px;
+	color: #FEFCB0;
+    padding: 6px;
+}
+
+QPushButton:pressed {
+    background-color: rgb(30,23,46);
+    border-style: inset;
+}
+QPushButton:hover {
+	background-color: #3F325C;
+}</string>
+        </property>
+        <property name="text">
+         <string>Fibonacci Heap</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="3">
+       <widget class="QPushButton" name="btnWarshall">
+        <property name="minimumSize">
+         <size>
+          <width>180</width>
+          <height>90</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>160</width>
+          <height>90</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>-1</pointsize>
+          <italic>false</italic>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+	background-color: rgb(28,19,42);
+    border-style: outset;
+    border-width: 0;
+    border-radius: 10px;
+    border-color: beige;
+    font: bold 18px;
+	color: rgb(254,215,215);
+    padding: 6px;
+}
+
+QPushButton:pressed {
+    background-color: rgb(30,23,46);
+    border-style: inset;
+}
+QPushButton:hover {
+	background-color: #3F325C;
+}</string>
+        </property>
+        <property name="text">
+         <string>Algoritmo de
+Warshall</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0">
+       <widget class="QPushButton" name="btnFloyd">
+        <property name="minimumSize">
+         <size>
+          <width>180</width>
+          <height>90</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>160</width>
+          <height>90</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>-1</pointsize>
+          <italic>false</italic>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+	background-color: rgb(28,19,42);
+    border-style: outset;
+    border-width: 0;
+    border-radius: 10px;
+    border-color: beige;
+    font: bold 18px;
+	color: #9AE6B4;
+    padding: 6px;
+}
+
+QPushButton:pressed {
+    background-color: rgb(30,23,46);
+    border-style: inset;
+}
+QPushButton:hover {
+	background-color: #3F325C;
+}</string>
+        </property>
+        <property name="text">
+         <string>Algoritmo de
+Floyd</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="1">
+       <widget class="QPushButton" name="btnDijkstra">
+        <property name="minimumSize">
+         <size>
+          <width>180</width>
+          <height>90</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>160</width>
+          <height>90</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>-1</pointsize>
+          <italic>false</italic>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+	background-color: rgb(28,19,42);
+    border-style: outset;
+    border-width: 0;
+    border-radius: 10px;
+    border-color: beige;
+    font: bold 18px;
+	color: #FFD97F;
+    padding: 6px;
+}
+
+QPushButton:pressed {
+    background-color: rgb(30,23,46);
+    border-style: inset;
+}
+QPushButton:hover {
+	background-color: #3F325C;
+}</string>
+        </property>
+        <property name="text">
+         <string>Algoritmo de
+Dijkstra</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="2">
+       <widget class="QPushButton" name="btnKruskal">
+        <property name="minimumSize">
+         <size>
+          <width>180</width>
+          <height>90</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>160</width>
+          <height>90</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>-1</pointsize>
+          <italic>false</italic>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+	background-color: rgb(28,19,42);
+    border-style: outset;
+    border-width: 0;
+    border-radius: 10px;
+    border-color: beige;
+    font: bold 18px;
+	color: #33FF99;
+    padding: 6px;
+}
+
+QPushButton:pressed {
+    background-color: rgb(30,23,46);
+    border-style: inset;
+}
+QPushButton:hover {
+	background-color: #3F325C;
+}</string>
+        </property>
+        <property name="text">
+         <string>Algoritmo de
+Kruskal</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="3">
+       <widget class="QPushButton" name="btnPrim">
+        <property name="minimumSize">
+         <size>
+          <width>180</width>
+          <height>90</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>160</width>
+          <height>90</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+	background-color: rgb(28,19,42);
+    border-style: outset;
+    border-width: 0;
+    border-radius: 10px;
+    border-color: beige;
+    font: bold 18px;
+	color: #90CDF4;
+    padding: 6px;
+}
+
+QPushButton:pressed {
+    background-color: rgb(30,23,46);
+    border-style: inset;
+}
+QPushButton:hover {
+	background-color: #3F325C;
+}</string>
+        </property>
+        <property name="text">
+         <string>Algoritmo de
+Prim</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
